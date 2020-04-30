@@ -34,7 +34,7 @@ for line in text:
         else:
             mydict[newword] =1
 
-print('Top 3 Popular names are:')
+print('Top',limit,'Popular names are:')
 
 for key,value in sorted(mydict.items(),reverse=True,key=lambda x: x[1])[:limit] : 
     print('%s %s' %(key,value))
