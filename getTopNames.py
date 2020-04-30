@@ -36,6 +36,6 @@ for line in text:
 
 print('Top 3 Popular names are:')
 
-for key,value in sorted(mydict.items(),reverse=True,key=lambda x: x[1])[:limit] : #get top 3
+for key,value in sorted(mydict.items(),reverse=True,key=lambda x: x[1])[:limit] : 
     print('%s %s' %(key,value))
     
